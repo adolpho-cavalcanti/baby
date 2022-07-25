@@ -30,14 +30,14 @@ setInterval(() => {
     window.getComputedStyle(cacto).getPropertyValue("left")
   );
 
-  if (cactoLeft > 40 && cactoLeft < 120 && dinoBottom <= 50 && !alreadyJump) {
+  /*if (cactoLeft > 40 && cactoLeft < 120 && dinoBottom <= 50 && !alreadyJump) {
     alert(`Game Over! Sua pontuação foi de: ${count}. Você precisa de 100 pontos`);
     count = 0;
   }
   if(count >= 100) {
     alert(`Parabéns Você está convidado para o nosso chá da Aurora!`);
     window.location= "https://ge.globo.com";
-  }
+  }*/
 
   count++;
   score.innerHTML = `Pontos: ${count}`;
