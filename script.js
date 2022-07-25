@@ -38,6 +38,16 @@ setInterval(() => {
     alert(`Parabéns Você está convidado para o nosso chá da Aurora!`);
     window.location= "https://ge.globo.com";
   }
+  
+  if(count < 30) {
+    score.style.color = "red";
+  }
+  if(count > 30 && count < 70) {
+    score.style.color = "orange";
+  }
+  if(count > 70) {
+    score.style.color = "green";
+  }
 
   count++;
   score.innerHTML = `Pontos: ${count}`;
